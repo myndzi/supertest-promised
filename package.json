@@ -1,0 +1,32 @@
+{
+  "name": "supertest-promised",
+  "version": "0.1.0",
+  "description": "Make supertest promise-compatible",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myndzi/supertest-promised.git"
+  },
+  "keywords": [
+    "supertest",
+    "promise",
+    "bluebird"
+  ],
+  "author": "Kris Reeves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myndzi/supertest-promised/issues"
+  },
+  "homepage": "https://github.com/myndzi/supertest-promised",
+  "peerDependencies": {
+    "bluebird": "*",
+    "supertest": "*"
+  },
+  "devDependencies": {
+    "bluebird": "^2.2.2",
+    "supertest": "^0.13.0"
+  }
+}
