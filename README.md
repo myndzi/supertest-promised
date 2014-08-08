@@ -10,6 +10,8 @@ I create a stub app with the functions that supertest expects, call request(app)
 
 ## Usage
 
+Just use supertest as normal, but don't bother supplying a callback to the `end` method. If no callback is supplied, `end` will return a promise instead.
+
     var request = ('supertest-promised');
     var app = require('express')();
     
