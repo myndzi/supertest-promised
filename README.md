@@ -1,8 +1,8 @@
 ## What?
 
-This is a simple module that converts supertest's API to return promises if no callback is supplied to the 'end' method. It uses Bluebird 2.0, and the returned promise has all the useful methods thus provided.
+This is a simple module that converts supertest's API to return promises if no callback is supplied to the 'end' method. It uses Bluebird 2.0 or 3.0, and the returned promise has all the useful methods thus provided.
 
-Bluebird and supertest are expected as peerDependencies, but also listed as dev dependencies so that you may use `npm install`. This module was written for Bluebird 2.2.2 and supertest 0.13.0, but the peerDependencies are listed as '*' to avoid dependency mess.
+Bluebird and supertest are expected as peerDependencies, but also listed as dev dependencies so that you may use `npm install`. This module was written for Bluebird 2.2.2 and supertest 0.13.0, but the peerDependencies are listed as '*' to avoid dependency mess. It is safe to use with Bluebird 3.x.
 
 ## How's it work?
 
@@ -14,9 +14,9 @@ Just use supertest as normal, but don't bother supplying a callback to the `end`
 
     var request = ('supertest-promised');
     var app = require('express')();
-    
+
     ...
-    
+
     // assuming mocha
     function validateArrayContents(item) { return item > 0; }
 
