@@ -1,6 +1,6 @@
 {
   "name": "supertest-promised",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Make supertest promise-compatible",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/myndzi/supertest-promised",
   "peerDependencies": {
-    "bluebird": "*",
+    "bluebird": "2.x||3.x",
     "supertest": "*"
   },
   "devDependencies": {
