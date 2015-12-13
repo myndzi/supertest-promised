@@ -22,9 +22,9 @@ proto.end = function (fn) {
     if (typeof fn === 'function') {
         return origEnd.apply(self, arguments);
     }
-    var deferred = Promise.defer();
-    origEnd.call(self, deferred.callback);
-    return deferred.promise;
+    return Promise.fromNode(function(cb) {
+        origEnd.call(self, cb);
+    });
 };
 
 module.exports = request;
