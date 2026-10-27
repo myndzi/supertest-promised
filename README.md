@@ -1,3 +1,7 @@
+# Archived
+
+Legacy / unused
+
 ## What?
 
 This is a simple module that converts supertest's API to return promises if no callback is supplied to the 'end' method. It uses Bluebird 2.0 or 3.0, and the returned promise has all the useful methods thus provided.
